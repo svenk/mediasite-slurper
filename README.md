@@ -21,3 +21,19 @@ HTTP queries to gather the data needed. Actually, MediaSite is a surprisingly op
 * Does not yet cover Silverlight streaming. Currently, only HTML5 video broadcasting is caught.
   Capturing Silverlight would actually require a virtual playback of the video, e.g. with Moonlight
   and Xvfb.
+
+## Usage examples
+
+This code can be run from the command line as
+
+```
+python mediasite-download.py --help
+```
+
+Invoke with something like
+
+```
+python mediasite-download.py --format html --parse "http://your-media.platform.example.com/MediaSite/Play/1b5ea1e55708651e658f0f42198cc5ad?catalog=fa5f9780-9a7f-11e5-8994-feff819cdc9f"
+```
+
+Or inspect the data using IPython and running the clases from there.
